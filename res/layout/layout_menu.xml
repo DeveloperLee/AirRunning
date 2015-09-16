@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_menu"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/side_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/side_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_menu_margin"
+            android:background="@drawable/sideslip_default_head"/>
+
+        <TextView
+            android:id="@+id/side_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/side_menu_margin"
+            android:layout_toRightOf="@+id/side_avatar"
+            android:text="@string/default_username"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/side_user_level"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/txt_pic"
+            android:layout_toRightOf="@+id/side_username"
+            android:background="@drawable/level_01_min" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/side_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/side_start_running"
+        android:layout_width="180dp"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sideslip_icon_run"
+        android:drawableRight="@drawable/slide_menu_navi"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/start_running"
+        android:textColor="#ffffff"
+        android:textSize="13.0sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/side_stat"
+        android:layout_width="180dp"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sideslip_icon_stat"
+        android:drawablePadding="10dip"
+        android:drawableRight="@drawable/slide_menu_navi"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/statistics"
+        android:textColor="#ffffff"
+        android:textSize="13.0sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/side_social"
+        android:layout_width="180dp"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sideslip_icon_haoyou"
+        android:drawableRight="@drawable/slide_menu_navi"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/my_socials"
+        android:textColor="#ffffff"
+        android:textSize="13.0sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+    
+    <TextView
+        android:id="@+id/side_feedback"
+        android:layout_width="180dp"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sideslip_icon_information"
+        android:drawableRight="@drawable/slide_menu_navi"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/feed_back"
+        android:textColor="#ffffff"
+        android:textSize="13.0sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+    
+    <TextView
+        android:id="@+id/side_settings"
+        android:layout_width="180dp"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/sideslip_icon_set"
+        android:drawableRight="@drawable/slide_menu_navi"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/settings"
+        android:textColor="#ffffff"
+        android:textSize="13.0sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+    </LinearLayout>
+    
+
+</LinearLayout>

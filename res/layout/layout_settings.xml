@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     
+    <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_feedback">
+       <ImageButton 
+          android:id="@+id/settings_btn_back"
+          android:layout_width="38dp"
+          android:layout_height="35dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/pic_margin"
+          android:background="@drawable/btn_home_menu"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:text="@string/settings"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+      android:id="@+id/settings_bar"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="8">
+      
+        <RelativeLayout 
+           android:id="@+id/settings_locate"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/bg_list_high">
+            
+            <ImageView 
+               android:id="@+id/settings_locate_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_icon_locate"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_locate_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_locate_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/text_locate"/>
+            
+             <Spinner 
+               android:id="@+id/set_locate_frequency"
+               android:layout_width="80dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+         <RelativeLayout 
+           android:id="@+id/settings_locate_pin"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/settings_locate">
+            
+            <ImageView 
+               android:id="@+id/settings_locate_pin_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_icon_pin"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_locate_pin_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_locate_pin_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/text_locate_pin"/>
+            
+            <Spinner 
+               android:id="@+id/set_spinner_locate_pin"
+               android:layout_width="80dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+           android:id="@+id/settings_locate_refresh"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/settings_locate_pin">
+            
+            <ImageView 
+               android:id="@+id/settings_locate_refresh_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_ic_refresh"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_locate_refresh_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_locate_refresh_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/text_locate_refresh"/>
+            
+             <Spinner 
+               android:id="@+id/set_spinner_map_refresh"
+               android:layout_width="80dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+         <RelativeLayout 
+           android:id="@+id/settings_weather_mode"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/settings_locate_refresh"
+           android:clickable="true"
+           android:layout_marginTop="25dp">
+            
+            <ImageView 
+               android:id="@+id/settings_sensor_mode_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/setp_ic_sensor"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_sensor_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_sensor_mode_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/weather_mode"/>
+            
+             <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/icon_navi"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"/>
+            
+        </RelativeLayout>
+        
+         <RelativeLayout 
+           android:id="@+id/settings_sensor_frequency"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:clickable="true"
+           android:layout_below="@+id/settings_weather_mode">
+            
+            <ImageView 
+               android:id="@+id/settings_sensor_frequency_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_ic_sensor_frequency"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_sensor_frequency_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_sensor_frequency_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/text_sensor_mode"/>
+            
+            <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/icon_navi"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+           android:id="@+id/settings_cache"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/settings_sensor_frequency"
+           android:layout_marginTop="25dp">
+            
+            <ImageView 
+               android:id="@+id/settings_cache_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_icon_cache"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_cache_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_cache_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/delete_cache"/>
+            
+             <TextView
+               android:id="@+id/settings_cache_size"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="13sp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="20dp"/>
+             
+        </RelativeLayout>
+        
+        <RelativeLayout 
+           android:id="@+id/settings_social_account"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/settings_cache"
+           android:layout_marginTop="25dp">
+            
+            <ImageView 
+               android:id="@+id/settings_social_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_ic_social_account"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_social_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/settings_social_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/settings_social"/>
+            
+            <ImageButton 
+               android:id="@+id/social_weibo"
+               android:layout_height="22dp"
+               android:layout_width="22dp"
+               android:background="@drawable/icon_weibo_1"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="25dp"
+               android:layout_centerVertical="true"/>
+            
+             <ImageButton 
+               android:id="@+id/social_qq"
+               android:layout_height="22dp"
+               android:layout_width="22dp"
+               android:background="@drawable/icon_qq_1"
+               android:layout_toLeftOf="@+id/social_weibo"
+               android:layout_marginRight="5dp"
+               android:layout_centerVertical="true"/>
+              
+             <ImageButton 
+               android:id="@+id/social_weixin"
+               android:layout_height="22dp"
+               android:layout_width="22dp"
+               android:background="@drawable/icon_weixin_1"
+               android:layout_toLeftOf="@+id/social_qq"
+               android:layout_marginRight="5dp"
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

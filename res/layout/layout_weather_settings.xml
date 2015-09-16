@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_feedback">
+      
+        <ImageButton 
+          android:id="@+id/weather_settings_btn_back"
+          android:layout_width="45dp"
+          android:layout_height="42dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/pic_margin"
+          android:background="@drawable/navigation_btn"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@color/white"
+          android:textSize="19sp"
+          android:text="@string/weather_mode"/>
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+      android:id="@+id/weather_settings_bar"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="8">
+        
+     <RelativeLayout 
+           android:id="@+id/weather_mode"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/bg_list_high">
+            
+            <ImageView 
+               android:id="@+id/weather_mode_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_icon_locate"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/settings_locate_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/weather_mode_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/weather_mode_txt"/>
+            
+             <Spinner 
+               android:id="@+id/weather_mode_spinner"
+               android:layout_width="80dp"
+               android:layout_height="30dp"
+               android:layout_alignParentRight="true"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+           android:id="@+id/weather_cache"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/weather_mode"
+           android:layout_marginTop="10dp">
+            
+            <ImageView 
+               android:id="@+id/weather_cache_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_icon_pin"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/weather_cache_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/weather_cache_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/weather_cache_text"/>
+            
+            <ToggleButton 
+               android:id="@+id/weather_cache_switch"
+               android:layout_width="44dp"
+               android:layout_height="24dp"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/toggle_btn"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:textOn=""
+               android:textOff=""
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout 
+           android:id="@+id/weather_background"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/bg_list_high"
+           android:layout_below="@+id/weather_cache">
+            
+            <ImageView 
+               android:id="@+id/weather_background_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/set_ic_refresh"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"/>
+            
+            <TextView
+               android:id="@+id/weather_background_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/weather_background_icon"
+               android:layout_marginLeft="10dp"
+               android:text="@string/weather_backgroud"/>
+            
+             <ToggleButton 
+               android:id="@+id/weather_background_switch"
+               android:layout_width="44dp"
+               android:layout_height="24dp"
+               android:layout_alignParentRight="true"
+               android:textAlignment="1"
+               android:layout_marginRight="20dp"
+               android:background="@drawable/toggle_btn"
+               android:textOn=""
+               android:textOff=""
+               android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/weather_layout"
+    android:background="@drawable/bg0_fine_day">
+    
+    
+    <RelativeLayout 
+      android:id="@+id/weather_top"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="890">
+        
+        <RelativeLayout 
+           android:id="@+id/weather_location_area"
+           android:layout_width="fill_parent"
+           android:layout_height="30dp"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/shadow">
+           
+          <ImageButton
+           android:id="@+id/weather_refresh"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="5dp"
+           android:background="@drawable/btn_refresh_weather"/>   
+           
+          <TextView 
+           android:id="@+id/weather_city"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="70dp"
+           android:textSize="16sp"
+           android:text="@string/default_city"/>
+          
+            
+        </RelativeLayout>
+        
+        <TextView 
+           android:id="@+id/update_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:layout_marginTop="10dp"
+           android:layout_below="@+id/weather_location_area"
+           android:layout_marginLeft="10dp"
+           android:textSize="12sp"/>
+        
+        <ImageView 
+           android:id="@+id/weather_widget_left1"
+           android:layout_width="70dp"
+           android:layout_height="40dp"
+           android:layout_alignParentBottom="true"
+           android:background="@drawable/fine_day_cloud1"/>
+        
+        <ImageView
+           android:id="@+id/weather_widget_right"
+           android:layout_width="50dp"
+           android:layout_height="25dp"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="13dp"
+           android:background="@drawable/fineday_cloud_right"/>
+
+        <ImageView
+            android:id="@+id/weather_widget_left2"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/weather_widget_right"
+            android:background="@drawable/fineday_cloud2" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+      android:id="@+id/weather_bottom"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="390">
+        
+        
+        <TextView 
+          android:id="@+id/weather_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#ffffff"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:text="@string/default_weather"
+          android:layout_marginLeft="20dp"
+          android:layout_above="@+id/temp_num1"
+          android:layout_marginBottom="10dp"/>
+        
+        <ImageView 
+          android:id="@+id/temp_num1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"/>
+        
+        <ImageView 
+          android:id="@+id/temp_num2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/temp_num1"/>
+        
+        <ImageView
+          android:id="@+id/temp_num3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/temp_num2"
+          android:layout_toRightOf="@+id/temp_num2"/>
+        
+        <ImageView
+          android:id="@+id/temp_num4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/temp_num2"
+          android:layout_toRightOf="@+id/temp_num3"/>
+        
+        <RelativeLayout 
+           android:id="@+id/pm_level_area"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:layout_below="@+id/temp_num1"
+           android:clickable="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp">
+          
+          <ImageButton 
+           android:id="@+id/pm_level"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="5dp"
+           android:background="@drawable/notif_level2"/>
+          
+          <TextView 
+           android:id="@+id/pm_number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/pm_level"
+           android:layout_marginLeft="10dp"
+           android:textSize="18sp"
+           android:text="@string/default_pm"/>
+            
+        </RelativeLayout>  
+        
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

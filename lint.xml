@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/service/BLEService.java" />
+    </issue>
+    <issue id="RtlHardcoded">
+        <ignore path="src/activity/HomeFragment.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/util/SoundPlayer.java" />
+    </issue>
+</lint>

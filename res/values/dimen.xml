@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_pic">5.0dip</dimen>
+    <dimen name="pic_margin">5.0dip</dimen>
+    <dimen name="home_stat_margin">39dip</dimen>
+    <dimen name="home_map_icon_margin">25dip</dimen>
+    <dimen name="side_menu_margin">15dip</dimen>
+    <dimen name="cust_item_margin">10dip</dimen>
+</resources>

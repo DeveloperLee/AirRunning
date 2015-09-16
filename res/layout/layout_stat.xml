@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tip">
+    
+     <RelativeLayout 
+      android:id="@+id/stat_titlebar"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:background="@drawable/bg_feedback">
+      
+      <ImageButton 
+        android:id="@+id/stat_btn_menu"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_home_menu"/>
+      <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:text="@string/statistics"/>
+      
+      <ImageButton
+        android:id="@+id/btn_share_stat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_share_stat"/> 
+      
+     </RelativeLayout>
+      
+   <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="true"
+    android:scrollbarFadeDuration="500"
+    android:layout_below="@+id/stat_titlebar"
+    android:layout_marginTop="10dp">
+ 
+      <RelativeLayout 
+        android:id="@+id/stat_grapha_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+          
+         <RelativeLayout 
+             android:id="@+id/weekly_area"
+             android:layout_width="match_parent"
+             android:layout_height="240dp"
+             android:background="@drawable/bg_blur">
+         
+           <TextView 
+              android:id="@+id/stat_weekly_data"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:textColor="@color/white"
+              android:text="@string/weekly_run"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"/>
+          
+           <com.github.mikephil.charting.charts.CombinedChart
+              android:id="@+id/weekly_chart"
+              android:layout_width="wrap_content"
+              android:layout_height="140dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="10dp"/>
+          
+          </RelativeLayout>
+          
+          <RelativeLayout 
+             android:id="@+id/daily_area"
+             android:layout_width="match_parent"
+             android:layout_height="240dp"
+             android:background="@drawable/bg_blur"
+             android:layout_below="@+id/weekly_area"
+             android:layout_marginTop="10dp">
+           
+           <TextView 
+             android:id="@+id/stat_weekly_pm"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="12sp"
+             android:textColor="@color/white"
+             android:text="@string/daily_pm"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"/>
+           
+            <com.github.mikephil.charting.charts.LineChart
+             android:id="@+id/pm_chart"
+             android:layout_width="wrap_content"
+             android:layout_height="150dp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"/>
+           
+           </RelativeLayout>
+           
+           
+           <RelativeLayout 
+             android:id="@+id/max_area"
+             android:layout_width="match_parent"
+             android:layout_height="140dp"
+             android:layout_below="@+id/daily_area"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/bg_blur">
+             
+              <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:text="@string/max_day"/>
+             
+		         <LinearLayout 
+		          android:id="@+id/max_num_area"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_centerInParent="true"
+		          android:orientation="horizontal">
+		
+	                <ImageView 
+		              android:id="@+id/max_num1"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/t1"/>
+		            <ImageView 
+		              android:id="@+id/max_num2"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/t4"/>
+		            <ImageView 
+		              android:id="@+id/max_num3"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/t7"/>
+		            
+		        </LinearLayout>
+		        
+		       <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/max_num_area"
+                android:layout_toRightOf="@+id/max_num_area"
+                android:layout_marginLeft="5dp"
+                android:text="@string/km"/>
+               
+           </RelativeLayout>
+           
+           
+            <RelativeLayout 
+             android:layout_width="match_parent"
+             android:layout_height="140dp"
+             android:background="@drawable/bg_blur"
+             android:layout_below="@+id/max_area"
+             android:layout_marginTop="10dp">
+		       
+              <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:text="@string/weight"/>
+             
+		         <LinearLayout 
+		          android:id="@+id/weight_num_area"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_centerInParent="true"
+		          android:orientation="horizontal">
+		
+	                <ImageView 
+		              android:id="@+id/weight_num1"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/t6"/>
+		            <ImageView 
+		              android:id="@+id/weight_num2"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:background="@drawable/t0"/>
+		            
+		        </LinearLayout>
+		        
+		       <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/weight_num_area"
+                android:layout_toRightOf="@+id/weight_num_area"
+                android:layout_marginLeft="5dp"
+                android:text="@string/kg"/>
+               
+           </RelativeLayout>
+               
+           
+         </RelativeLayout>
+           
+      </ScrollView>
+      
+  </RelativeLayout>

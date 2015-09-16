@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout 
+      android:id="@+id/data_titlebar"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_feedback">
+      
+        <ImageButton 
+          android:id="@+id/data_btn_back"
+          android:layout_width="38dp"
+          android:layout_height="35dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/pic_margin"
+          android:background="@drawable/navigation_back_btn"/>
+        
+        <TextView
+          android:id="@+id/data_device_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:textSize="16sp"/>
+        
+        <TextView
+          android:id="@+id/data_device_addr"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:layout_below="@+id/data_device_name"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="2dp"
+          android:textSize="12sp"/>
+        
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+     android:id="@+id/data_mainbar"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="8">
+        
+        <TextView 
+          android:id="@+id/data_display"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:textColor="@color/bg_blue"/>
+        
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

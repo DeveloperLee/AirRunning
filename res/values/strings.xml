@@ -1,0 +1,102 @@
+<resources>
+
+    <string name="app_name">AirRunning</string>
+    <string name="run">跑步</string>
+    <string name="cal">卡路里(kCal)</string>
+    <string name="cal_init">0</string>
+    <string name="duration">时长</string>
+    <string name="duration_init">00:00:00</string>
+    <string name="duration_init_short">00:00</string>
+    <string name="distance">距离(km)</string>
+    <string name="distance_init">0.00</string>
+    <string name="gps">GPS</string>
+    <string name="default_username">游客</string>
+    <string name="start_running">开始跑步</string>
+    <string name="statistics">数据统计</string>
+    <string name="my_socials">我的圈子</string>
+    <string name="information">运动信息</string>
+    <string name="feed_back">数据反馈</string>
+    <string name="settings">设置</string>
+    <string name="cust_title">请设置跑步目标</string>
+    <string name="cus_time">时间</string>
+    <string name="cus_cal">卡路里</string>
+    <string name="cus_dis">距离</string>
+    <string name="cust_time_des">规定时间的跑步</string>
+    <string name="cust_cal_des">规定消耗卡路里的跑步</string>
+    <string name="cust_dis_des">规定距离的跑步</string>
+    <string name="weather">实时空气指数</string>
+    <string name="default_loc_text">沈阳</string>
+    <string name="default_temp">10 C</string>
+    <string name="default_weather">晴</string>
+    <string name="default_time">3月24日 13:23:21 周二</string>
+    <string name="default_ultra">弱</string>
+    <string name="default_humidity">29%</string>
+    <string name="default_wind">西南风2级</string>
+    <string name="default_pm">67</string>
+    <string name="default_name">Derrick</string>
+    <string name="default_des">没有跑步的人生是不完整的</string>
+    <string name="feedback_tip">提示：本功能需要配合可穿戴式PM2.5测量器，请确保您的仪器处于正常运行状态并且打开您的移动设备的蓝牙功能</string>
+    <string name="bluetooth_state">当前蓝牙的状态为:</string>
+    <string name="bluetooth">未开启</string>
+    <string name="level_one">初级跑者</string>
+    <string name="goon">继续</string>
+    <string name="stop">停止</string>
+    <string name="weekly_run">每周跑步数据</string>
+    <string name="weekly_pm">每周空气质量</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_title">跑步完成</string>
+    <string name="text_locate">定位间隔</string>
+    <string name="text_locate_pin">定位精度</string>
+    <string name="delete_cache">清理缓存</string>
+    <string name="text_locate_refresh">地图绘制频率</string>
+    <string name="text_sensor_mode">传感器传输模式</string>
+    <string name="settings_social">第三方社交帐号</string>
+    <string name="weibo">新浪微博</string>
+    <string name="weixin">微信</string>
+    <string name="qq">腾讯QQ</string>
+    <string name="not_reg">点击绑定您的社交帐号</string>
+    <string name="account_manage">第三方社交帐号管理</string>
+    <string name="cloudy">多云</string>
+    <string name="default_city">沈阳</string>
+    <string name="today_pm">今日PM指数</string>
+    <string name="tip_index">生活指数</string>
+    <string name="cloth">穿衣</string>
+    <string name="washcar">洗车</string>
+    <string name="fever">感冒</string>
+    <string name="sport">运动</string>
+    <string name="ultra">紫外线</string>
+    <string name="daily_pm">每日空气质量</string>
+    <string name="max_day">最大日跑量</string>
+    <string name="weight">当前体重</string>
+    <string name="km">Km</string>
+    <string name="kg">Kg</string>
+    <string name="weather_mode">天气数据传输模式</string>
+    <string name="weather_mode_txt">天气数据获取模式</string>
+    <string name="weather_cache_text">天气数据缓存</string>
+    <string name="weather_backgroud">允许后台获取数据</string>
+    <string name="yes">允许</string>
+    <string name="no">禁止</string>
+    <string name="bluetooth_enable_text">蓝牙是否开启</string>
+    <string name="bluetooth_mydevice_text">我的设备</string>
+    <string name="bluetooth_scan_device_text">扫描到的设备</string>
+    <string-array name="location_pin">
+        <item>高精度</item>
+        <item>GPS</item>
+        <item>低功耗</item>
+    </string-array>
+    <string-array name="map_refresh_frequency">
+        <item>高</item>
+        <item>中等</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="map_locate_frequency">
+        <item>10秒</item>
+        <item>15秒</item>
+        <item>30秒</item>
+    </string-array>
+    <string-array name="weather_mode">
+        <item>手动</item>
+        <item>自动</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/api/AbsOpenAPI.java=UTF-8
+encoding//src/api/UsersAPI.java=UTF-8
+encoding//src/model/WeiboUser.java=UTF-8
+encoding//src/util/AccessTokenKeeper.java=UTF-8
+encoding/<project>=UTF-8

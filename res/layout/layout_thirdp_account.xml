@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    
+     <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_feedback">
+       <ImageButton 
+          android:id="@+id/account_back_btn"
+          android:layout_width="38dp"
+          android:layout_height="35dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/pic_margin"
+          android:background="@drawable/navigation_back_btn"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:text="@string/account_manage"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+      android:id="@+id/thirdp_main"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="8">
+        
+        <ExpandableListView
+          android:id="@+id/third_party_list"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"/> 
+            
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_time"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp" 
+    android:background="@drawable/goal_bg_3">
+    
+    <ImageView 
+       android:id="@+id/item_time_icon"
+       android:layout_width="45dp"
+       android:layout_height="45dp"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="@dimen/pic_margin"
+       android:background="@drawable/goal_ic_time"/>
+    <ImageView 
+       android:id="@+id/item_time_line"
+       android:layout_width="2dp"
+       android:layout_height="50dp"
+       android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/item_time_icon"
+       android:layout_marginLeft="15dp"
+       android:background="@drawable/goal_line" />
+    <TextView
+       android:id="@+id/item_time_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="22sp"
+       android:text="@string/cus_time"
+       android:textColor="@color/cust_blue"
+       android:layout_toRightOf="@+id/item_time_line"
+       android:layout_marginLeft="@dimen/cust_item_margin"
+       android:layout_marginTop="5dp"/>
+    <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="13sp"
+       android:text="@string/cust_time_des"
+       android:textColor="@color/gray"
+       android:layout_below="@+id/item_time_text"
+       android:layout_toRightOf="@+id/item_time_line"
+       android:layout_marginTop="6dp"
+       android:layout_marginLeft="@dimen/cust_item_margin"/>
+
+</RelativeLayout>
